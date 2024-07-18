@@ -1,0 +1,4 @@
+<form [formGroup]="supervisorIdForm">
+  <label for="supervisorIdInput">Supervisor ID</label>
+  <input id="supervisorIdInput" type="text" formControlName="supervisorId" (input)="onInputChange($event)" (blur)="onInputBlur()">
+</form>

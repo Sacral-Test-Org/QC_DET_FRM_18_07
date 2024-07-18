@@ -1,0 +1,34 @@
+<div class="qc-data-container">
+  <form [formGroup]="qcDataForm">
+    <div class="form-group">
+      <label for="flg">Flag (FLG)</label>
+      <input id="flg" formControlName="flg" type="text" class="form-control" readonly>
+    </div>
+    <div class="form-group">
+      <label for="desc">Description (DESC)</label>
+      <input id="desc" formControlName="desc" type="text" class="form-control" readonly maxlength="200">
+    </div>
+    <div class="form-group">
+      <label for="opusval">OPUS Value (OPUSVAL)</label>
+      <textarea id="opusval" formControlName="opusval" class="form-control" readonly maxlength="5000" (keydown)="handleKeyDown($event)"></textarea>
+    </div>
+    <div class="form-group">
+      <label>CI</label>
+      <div>
+        <input type="radio" formControlName="ci" value="Y" (change)="onCIRadioButtonChange('Y')"> Yes
+        <input type="radio" formControlName="ci" value="N" (change)="onCIRadioButtonChange('N')"> No
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="scanDate">Scan Date (SCAN_DATE)</label>
+      <input id="scanDate" formControlName="scanDate" type="date" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="insDt">Insert Date (INS_DT)</label>
+      <input id="insDt" formControlName="insDt" type="date" class="form-control">
+    </div>
+    <div class="form-group">
+      <input id="misUser" formControlName="misUser" type="hidden">
+    </div>
+  </form>
+</div>

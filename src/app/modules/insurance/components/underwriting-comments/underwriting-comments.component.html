@@ -1,0 +1,37 @@
+<div class="underwriting-comments-container">
+  <h2>Underwriting Comments</h2>
+  
+  <!-- Policy Number Input -->
+  <div class="form-group">
+    <label for="policyNumber">Policy Number:</label>
+    <input type="text" id="policyNumber" [(ngModel)]="policyNumber" (blur)="fetchComments()" class="form-control" />
+  </div>
+  
+  <!-- User ID Field (conditionally hidden) -->
+  <div class="form-group" *ngIf="showUserIdField">
+    <label for="userId">User ID:</label>
+    <input type="text" id="userId" [(ngModel)]="userId" class="form-control" />
+  </div>
+  
+  <!-- Comments Section -->
+  <div *ngIf="comments.length > 0">
+    <h3>Comments</h3>
+    <ul class="comments-list">
+      <li *ngFor="let comment of comments">
+        <strong>{{ comment.userId }}</strong> ({{ comment.coDate }}): {{ comment.uwComments }}
+      </li>
+    </ul>
+  </div>
+  
+  <!-- No Comments Alert -->
+  <div *ngIf="comments.length === 0 && policyNumber">
+    <div class="alert alert-warning">
+      No UW comments found for the specified policy number.
+    </div>
+  </div>
+  
+  <!-- Buttons -->
+  <div class="form-group">
+    <button (click)="goToQCBlock()" class="btn btn-primary">Go to QC Block</button>
+  </div>
+</div>

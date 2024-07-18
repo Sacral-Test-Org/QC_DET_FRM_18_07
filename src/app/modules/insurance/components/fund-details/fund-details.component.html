@@ -1,0 +1,49 @@
+<div class="fund-details-container">
+  <h2>Fund Details</h2>
+  <table class="fund-details-table">
+    <thead>
+      <tr>
+        <th>Fund ID</th>
+        <th>Fund Description</th>
+        <th>Apportionment Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let fund of funds | slice:0:4">
+        <td>{{ fund.fundId }}</td>
+        <td>{{ fund.fundDescription }}</td>
+        <td>{{ fund.apportionmentPercentage }}%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Styles for the component -->
+<style>
+  .fund-details-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .fund-details-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .fund-details-table th,
+  .fund-details-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .fund-details-table th {
+    background-color: #f2f2f2;
+    color: black;
+  }
+
+  .fund-details-table td {
+    background-color: #e0e0e0;
+    color: black;
+  }
+</style>

@@ -1,0 +1,56 @@
+<div class="vendor-selection-container">
+  <h2>Select Vendor</h2>
+  <input type="text" placeholder="Double-click to select vendor" (dblclick)="openVendorList()" [(ngModel)]="selectedVendorName" readonly>
+  
+  <div *ngIf="showVendorList" class="vendor-list">
+    <table>
+      <thead>
+        <tr>
+          <th>Vendor Code</th>
+          <th>Vendor Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vendor of vendors" (click)="selectVendor(vendor)">
+          <td>{{ vendor.vendorCode }}</td>
+          <td>{{ vendor.vendorName }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<style>
+  .vendor-selection-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  .vendor-list {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+</style>

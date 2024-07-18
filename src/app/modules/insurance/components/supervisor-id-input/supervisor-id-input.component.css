@@ -1,0 +1,27 @@
+/* src/app/modules/insurance/components/supervisor-id-input/supervisor-id-input.component.css */
+
+/* Style for the Supervisor ID input field */
+.supervisor-id-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Style for the input field when it has been accepted */
+.supervisor-id-input.accepted {
+  border-color: #4CAF50; /* Green border */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Green shadow */
+}
+
+/* Style for the input field label */
+.supervisor-id-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}

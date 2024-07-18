@@ -1,0 +1,13 @@
+<div class="reason-of-skip-container">
+  <label for="reasonOfSkip">Reason Of Skip:</label>
+  <select id="reasonOfSkip" [(ngModel)]="selectedReason" (change)="onReasonChange($event)">
+    <option *ngFor="let reason of reasons" [value]="reason">{{ reason }}</option>
+  </select>
+  
+  <div *ngIf="selectedReason === 'OTHERS'">
+    <label for="comments">Comments:</label>
+    <textarea id="comments" [(ngModel)]="comments" placeholder="Enter comments"></textarea>
+  </div>
+  
+  <button (click)="submitReason()">Submit</button>
+</div>

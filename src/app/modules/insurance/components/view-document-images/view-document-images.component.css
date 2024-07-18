@@ -1,0 +1,21 @@
+/* src/app/modules/insurance/components/view-document-images/view-document-images.component.css */
+
+/* Styling for the 'View Images' button */
+.view-images-button {
+  background-color: #007bff; /* Primary blue color */
+  color: white; /* White text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding for the button */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline from text */
+  display: inline-block; /* Inline block display */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin around the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.view-images-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

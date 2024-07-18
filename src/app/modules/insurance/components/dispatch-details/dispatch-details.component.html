@@ -1,0 +1,98 @@
+<!-- src/app/modules/insurance/components/dispatch-details/dispatch-details.component.html -->
+
+<div class="dispatch-details-container">
+  <form (ngSubmit)="onSave()">
+    <div class="form-group">
+      <label for="shipNo">Shipment Number</label>
+      <input type="text" id="shipNo" [(ngModel)]="dispatchDetails.shipNo" name="shipNo" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <label for="awbNo">Airway Bill Number</label>
+      <input type="text" id="awbNo" [(ngModel)]="dispatchDetails.awbNo" name="awbNo" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <label for="delType">Delivery Type</label>
+      <select id="delType" [(ngModel)]="dispatchDetails.delType" name="delType" class="form-control">
+        <option *ngFor="let type of deliveryTypes" [value]="type">{{ type }}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="vendor">Vendor</label>
+      <input type="text" id="vendor" [(ngModel)]="dispatchDetails.vendor" name="vendor" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <label for="desType">Destination Type</label>
+      <select id="desType" [(ngModel)]="dispatchDetails.desType" name="desType" class="form-control">
+        <option *ngFor="let type of destinationTypes" [value]="type">{{ type }}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="pickReqNo">Pickup Request Number</label>
+      <input type="text" id="pickReqNo" [(ngModel)]="dispatchDetails.pickReqNo" name="pickReqNo" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <label for="prRef">Reference Number</label>
+      <input type="text" id="prRef" [(ngModel)]="dispatchDetails.prRef" name="prRef" class="form-control" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="consigneeName">Consignee Name</label>
+      <input type="text" id="consigneeName" [(ngModel)]="dispatchDetails.consigneeName" name="consigneeName" class="form-control" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="conAdd1">Consignee Address Line 1</label>
+      <input type="text" id="conAdd1" [(ngModel)]="dispatchDetails.conAdd1" name="conAdd1" class="form-control" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="conAdd2">Consignee Address Line 2</label>
+      <input type="text" id="conAdd2" [(ngModel)]="dispatchDetails.conAdd2" name="conAdd2" class="form-control" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="conAdd3">Consignee Address Line 3</label>
+      <input type="text" id="conAdd3" [(ngModel)]="dispatchDetails.conAdd3" name="conAdd3" class="form-control" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="conCity">Consignee City</label>
+      <input type="text" id="conCity" [(ngModel)]="dispatchDetails.conCity" name="conCity" class="form-control" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="conState">Consignee State</label>
+      <input type="text" id="conState" [(ngModel)]="dispatchDetails.conState" name="conState" class="form-control" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="desPin">Destination Pin Code</label>
+      <input type="text" id="desPin" [(ngModel)]="dispatchDetails.desPin" name="desPin" class="form-control" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="wt">Weight</label>
+      <input type="number" id="wt" [(ngModel)]="dispatchDetails.wt" name="wt" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <label for="gm">Weight Unit</label>
+      <select id="gm" [(ngModel)]="dispatchDetails.gm" name="gm" class="form-control">
+        <option *ngFor="let unit of weightUnits" [value]="unit">{{ unit }}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="venCode">Vendor Code</label>
+      <input type="text" id="venCode" [(ngModel)]="dispatchDetails.venCode" name="venCode" class="form-control" readonly>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>

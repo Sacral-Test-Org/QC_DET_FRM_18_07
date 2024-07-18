@@ -1,0 +1,54 @@
+<!-- src/app/modules/insurance/components/authentication/authentication.component.html -->
+
+<div class="authentication-container">
+  <h2>Authentication</h2>
+  
+  <!-- Supervisor ID Input -->
+  <div class="form-group">
+    <label for="supervisorId">Supervisor ID</label>
+    <input 
+      type="text" 
+      id="supervisorId" 
+      maxlength="10" 
+      (input)="supervisorId = $event.target.value.toUpperCase()" 
+      [(ngModel)]="supervisorId" 
+      class="form-control" 
+      required>
+  </div>
+  
+  <!-- Password Input -->
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input 
+      type="password" 
+      id="password" 
+      maxlength="10" 
+      [(ngModel)]="password" 
+      class="form-control" 
+      required>
+  </div>
+  
+  <!-- Comments Input -->
+  <div class="form-group">
+    <label for="comments">Comments</label>
+    <textarea 
+      id="comments" 
+      maxlength="500" 
+      [(ngModel)]="comments" 
+      class="form-control" 
+      rows="5">
+    </textarea>
+  </div>
+  
+  <!-- Authenticate Button -->
+  <button 
+    (click)="authenticate()" 
+    class="btn btn-primary">
+    Authenticate
+  </button>
+  
+  <!-- Error Message Display -->
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+</div>

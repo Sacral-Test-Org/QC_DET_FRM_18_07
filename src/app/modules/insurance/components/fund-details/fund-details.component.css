@@ -1,0 +1,44 @@
+/* src/app/modules/insurance/components/fund-details/fund-details.component.css */
+
+/* Ensure the fund details are displayed in a grid format with a maximum of 4 records visible at a time */
+.fund-details-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-height: 400px; /* Adjust as needed to show a maximum of 4 records */
+  overflow-y: auto;
+}
+
+/* Style each fund detail item */
+.fund-detail-item {
+  background-color: gray;
+  color: black;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Additional styling for the grid container */
+.fund-details-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Style for the header of the fund details */
+.fund-details-header {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Style for individual labels and values within each fund detail item */
+.fund-detail-label {
+  font-weight: bold;
+}
+
+.fund-detail-value {
+  margin-left: 5px;
+}

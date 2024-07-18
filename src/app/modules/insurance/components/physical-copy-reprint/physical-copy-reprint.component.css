@@ -1,0 +1,97 @@
+/* src/app/modules/insurance/components/physical-copy-reprint/physical-copy-reprint.component.css */
+
+/* Purpose: CSS file for styling the physical copy reprint component */
+
+/* Style for the main container of the physical copy reprint component */
+.physical-copy-reprint-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the header of the component */
+.physical-copy-reprint-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style for the radio button group */
+.radio-button-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Style for individual radio buttons */
+.radio-button-group input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Style for the labels of the radio buttons */
+.radio-button-group label {
+  margin-right: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Style for the Ok button */
+.ok-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the Ok button */
+.ok-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the dialog window */
+.dialog-window {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the dialog window header */
+.dialog-window-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Style for the dialog window content */
+.dialog-window-content {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Style for the confirmation button in the dialog window */
+.dialog-confirm-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the confirmation button */
+.dialog-confirm-button:hover {
+  background-color: #218838;
+}

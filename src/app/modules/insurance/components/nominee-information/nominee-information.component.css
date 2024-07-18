@@ -1,0 +1,89 @@
+/* src/app/modules/insurance/components/nominee-information/nominee-information.component.css */
+
+/* General styles for the nominee information component */
+.nominee-information-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nominee-information-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.nominee-information-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.nominee-information-form .form-group {
+  margin-bottom: 15px;
+}
+
+.nominee-information-form .form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.nominee-information-form .form-group input,
+.nominee-information-form .form-group select,
+.nominee-information-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.nominee-information-form .form-group input:read-only,
+.nominee-information-form .form-group textarea:read-only {
+  background-color: #e9ecef;
+}
+
+.nominee-information-form .form-group .radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.nominee-information-form .form-group .radio-group input[type="radio"] {
+  margin-right: 10px;
+}
+
+.nominee-information-form .form-group .radio-group label {
+  margin-right: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.nominee-information-form .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.nominee-information-form .form-actions button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nominee-information-form .form-actions button.save-btn {
+  background-color: #28a745;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.nominee-information-form .form-actions button.cancel-btn {
+  background-color: #dc3545;
+  color: #fff;
+}

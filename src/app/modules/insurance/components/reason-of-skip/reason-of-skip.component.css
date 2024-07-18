@@ -1,0 +1,39 @@
+/* src/app/modules/insurance/components/reason-of-skip/reason-of-skip.component.css */
+
+/* Styling for the Reason Of Skip dropdown component */
+.reason-of-skip-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.reason-of-skip-label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.reason-of-skip-dropdown {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.reason-of-skip-comments {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}

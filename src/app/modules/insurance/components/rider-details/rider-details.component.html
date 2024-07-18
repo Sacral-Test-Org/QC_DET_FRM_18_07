@@ -1,0 +1,66 @@
+<div class="rider-details-container">
+  <h2>Rider Details</h2>
+  <form [formGroup]="riderForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="coverCode">Cover Code <span class="required">*</span></label>
+      <input id="coverCode" formControlName="coverCode" type="text" class="form-control" required />
+      <div *ngIf="riderForm.get('coverCode').invalid && (riderForm.get('coverCode').dirty || riderForm.get('coverCode').touched)" class="error">
+        Cover Code is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="sumInsured">Sum Insured for the Whole Cover</label>
+      <input id="sumInsured" formControlName="sumInsured" type="number" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label for="benefitTerm">Benefit Term</label>
+      <input id="benefitTerm" formControlName="benefitTerm" type="number" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label for="premiumTerm">Premium Term</label>
+      <input id="premiumTerm" formControlName="premiumTerm" type="number" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="riderForm.invalid">Save</button>
+  </form>
+</div>
+
+<style>
+  .rider-details-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .required {
+    color: red;
+  }
+
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+</style>

@@ -1,0 +1,58 @@
+/* src/app/modules/insurance/components/underwriting-comments/underwriting-comments.component.css */
+
+/* Purpose: CSS file for styling the underwriting comments component */
+
+/* General styles for the underwriting comments component */
+.underwriting-comments-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.underwriting-comments-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.underwriting-comments-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.underwriting-comment-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.underwriting-comment-item:last-child {
+  border-bottom: none;
+}
+
+.underwriting-comment-user-id {
+  font-weight: bold;
+  color: #555;
+}
+
+.underwriting-comment-date {
+  font-size: 0.9em;
+  color: #999;
+}
+
+.underwriting-comment-text {
+  margin-top: 5px;
+  white-space: pre-wrap;
+  color: #444;
+}
+
+.no-comments-alert {
+  color: #d9534f;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,127 @@
+<div class="insurance-cover-details">
+  <h2>Insurance Cover Details</h2>
+  
+  <form [formGroup]="insuranceCoverForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="contractId">Contract ID</label>
+      <input id="contractId" formControlName="contractId" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="versionNo">Version Number</label>
+      <input id="versionNo" formControlName="versionNo" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="objectId">Object ID</label>
+      <input id="objectId" formControlName="objectId" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="actionCode">Action Code</label>
+      <input id="actionCode" formControlName="actionCode" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="topIndicator">Top Indicator</label>
+      <input id="topIndicator" formControlName="topIndicator" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="partitionNo">Partition Number</label>
+      <input id="partitionNo" formControlName="partitionNo" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="coverCode">Cover Code</label>
+      <input id="coverCode" formControlName="coverCode" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="coverNo">Cover Number</label>
+      <input id="coverNo" formControlName="coverNo" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="previousVersion">Previous Version</label>
+      <input id="previousVersion" formControlName="previousVersion" type="text" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="reversingVersion">Reversing Version</label>
+      <input id="reversingVersion" formControlName="reversingVersion" type="text" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="sumInsuredWholeCover">Sum Insured for Whole Cover</label>
+      <input id="sumInsuredWholeCover" formControlName="sumInsuredWholeCover" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="sumInsuredCompanyShare">Sum Insured for Company Share</label>
+      <input id="sumInsuredCompanyShare" formControlName="sumInsuredCompanyShare" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="fullTermPremiumWholeCover">Full-Term Premium for Whole Cover</label>
+      <input id="fullTermPremiumWholeCover" formControlName="fullTermPremiumWholeCover" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="fullTermPremiumCompanyShare">Full-Term Premium for Company Share</label>
+      <input id="fullTermPremiumCompanyShare" formControlName="fullTermPremiumCompanyShare" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="agentCommissionWholeCover">Agent Commission for Whole Cover</label>
+      <input id="agentCommissionWholeCover" formControlName="agentCommissionWholeCover" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="agentCommissionCompanyShare">Agent Commission for Company Share</label>
+      <input id="agentCommissionCompanyShare" formControlName="agentCommissionCompanyShare" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="sharePortion">Share Portion</label>
+      <input id="sharePortion" formControlName="sharePortion" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="cvcCode">CVC Code</label>
+      <input id="cvcCode" formControlName="cvcCode" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="surchargeDiscount">Surcharge/Discount</label>
+      <input id="surchargeDiscount" formControlName="surchargeDiscount" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="reinsurableRiskAmount">Reinsurable Risk Amount</label>
+      <input id="reinsurableRiskAmount" formControlName="reinsurableRiskAmount" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="pcovContractId">PCOV Contract ID</label>
+      <input id="pcovContractId" formControlName="pcovContractId" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="pcovPartitionNo">PCOV Partition Number</label>
+      <input id="pcovPartitionNo" formControlName="pcovPartitionNo" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="pcovCoverCode">PCOV Cover Code</label>
+      <input id="pcovCoverCode" formControlName="pcovCoverCode" type="text" class="form-control" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="pcovCoverNo">PCOV Cover Number</label>
+      <input id="pcovCoverNo" formControlName="pcovCoverNo" type="text" class="form-control" required>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>

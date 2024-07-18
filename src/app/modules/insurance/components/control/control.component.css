@@ -1,0 +1,190 @@
+/* src/app/modules/insurance/components/control/control.component.css */
+
+/* Purpose: CSS file for styling the control component */
+
+/* Styling for the cancel button */
+.cancelButton {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Styling for the search form */
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.searchForm input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for the reset button */
+.resetButton {
+  background-color: #f0ad4e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Styling for the submit button */
+.submitButton {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Styling for the nominee form */
+.nomineeForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.nomineeForm input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for the image view section */
+.imageView {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.imageView img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for the enrich data form */
+.enrichDataForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+enrichDataForm input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for checkboxes */
+.checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.checkboxes label {
+  margin-right: 10px;
+}
+
+.checkboxes input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Styling for display items */
+.displayItems {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+displayItems div {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+/* Styling for the skip button */
+.skipButton {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Styling for the comments section */
+.commentsSection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.commentsSection textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* Styling for policy status */
+.policyStatus {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.policyStatus div {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+/* Styling for QC process status */
+.qcProcessStatus {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.qcProcessStatus div {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}

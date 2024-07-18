@@ -1,0 +1,87 @@
+/* src/app/modules/insurance/components/qc-data/qc-data.component.css */
+
+/* Purpose: CSS file for styling the QC data component */
+
+/* General styles for the QC data component */
+.qc-data-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qc-data-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.qc-data-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.qc-data-form .form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.qc-data-form .form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.qc-data-form .form-group input,
+.qc-data-form .form-group select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.qc-data-form .form-group input[readonly],
+.qc-data-form .form-group select[readonly] {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.qc-data-form .form-group .radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.qc-data-form .form-group .radio-group input[type="radio"] {
+  margin-right: 10px;
+}
+
+.qc-data-form .form-group .radio-group label {
+  margin-right: 20px;
+}
+
+.qc-data-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.qc-data-footer button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.qc-data-footer button:hover {
+  background-color: #0056b3;
+}

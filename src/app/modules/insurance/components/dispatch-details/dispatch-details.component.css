@@ -1,0 +1,77 @@
+/* src/app/modules/insurance/components/dispatch-details/dispatch-details.component.css */
+
+/* General form styling */
+.dispatch-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields styling */
+.dispatch-form input[type="text"],
+.dispatch-form input[type="number"],
+.dispatch-form select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Dropdown list styling */
+.dispatch-form select {
+  appearance: none;
+  background-color: #fff;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="none" stroke="%23333" stroke-width=".75" d="M2 0L0 2h4z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 0.65rem auto;
+}
+
+/* Button styling */
+.dispatch-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dispatch-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Read-only fields styling */
+.dispatch-form .readonly {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+/* Checkbox styling */
+.dispatch-form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dispatch-form .checkbox input[type="checkbox"] {
+  width: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .dispatch-form {
+    padding: 0.5rem;
+  }
+
+  .dispatch-form button {
+    width: 100%;
+  }
+}

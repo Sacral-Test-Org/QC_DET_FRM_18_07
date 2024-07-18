@@ -1,0 +1,21 @@
+<!-- src/app/modules/insurance/components/physical-copy-reprint/physical-copy-reprint.component.html -->
+
+<div class="physical-copy-reprint-container">
+  <h2>Manage Reprinting Process for Physical Copies</h2>
+  
+  <div class="form-group">
+    <label for="moveToPrintingBucket">Move To printing Bucket For Physical Copy</label>
+    <div>
+      <input type="radio" id="moveToPrintingBucketX" name="moveToPrintingBucket" value="X" [(ngModel)]="selectedOption">
+      <label for="moveToPrintingBucketX">X</label>
+    </div>
+    <div>
+      <input type="radio" id="moveToPrintingBucketPHY_MOVE" name="moveToPrintingBucket" value="PHY_MOVE" [(ngModel)]="selectedOption">
+      <label for="moveToPrintingBucketPHY_MOVE">PHY_MOVE</label>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <button (click)="handleOkButtonPress()">Ok</button>
+  </div>
+</div>

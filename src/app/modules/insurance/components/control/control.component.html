@@ -1,0 +1,91 @@
+<div class="control-container">
+  <!-- Reset Button -->
+  <button (click)="onResetButtonClick()">Reset</button>
+
+  <!-- Search Button -->
+  <button (click)="onSearchButtonClick()">Search</button>
+
+  <!-- Submit Button -->
+  <button (click)="onSubmitButtonClick()">Submit</button>
+
+  <!-- Nominee Form -->
+  <form #nomineeForm="ngForm">
+    <!-- Add nominee form fields here -->
+  </form>
+
+  <!-- Image View -->
+  <div class="image-view">
+    <!-- Add image view elements here -->
+  </div>
+
+  <!-- Enrich Data Form -->
+  <form #enrichDataForm="ngForm">
+    <!-- Add enrich data form fields here -->
+  </form>
+
+  <!-- Checkboxes -->
+  <div class="checkboxes">
+    <label>
+      <input type="checkbox" (change)="onCheckboxChange($event, 'CH1')" /> CH1
+    </label>
+    <label>
+      <input type="checkbox" (change)="onCheckboxChange($event, 'CH2')" /> CH2
+    </label>
+    <label>
+      <input type="checkbox" (change)="onCheckboxChange($event, 'CH3')" /> CH3
+    </label>
+    <label>
+      <input type="checkbox" (change)="onCheckboxChange($event, 'CH4')" /> CH4
+    </label>
+    <label>
+      <input type="checkbox" (change)="onCheckboxChange($event, 'CH5')" /> CH5
+    </label>
+    <label>
+      <input type="checkbox" (change)="onCheckboxChange($event, 'CH6')" /> CH6
+    </label>
+    <label>
+      <input type="checkbox" (change)="onCheckboxChange($event, 'CH7')" /> CH7
+    </label>
+    <label>
+      <input type="checkbox" (change)="onCheckboxChange($event, 'CH8')" /> CH8
+    </label>
+    <label>
+      <input type="checkbox" (change)="onCheckboxChange($event, 'CH9')" /> CH9
+    </label>
+    <label>
+      <input type="checkbox" (change)="onCheckboxChange($event, 'CH10')" /> CH10
+    </label>
+    <label>
+      <input type="checkbox" (change)="onCheckboxChange($event, 'CH27')" /> CH27
+    </label>
+    <label>
+      <input type="checkbox" (change)="onCheckboxChange($event, 'CH28')" /> CH28
+    </label>
+  </div>
+
+  <!-- Display Items -->
+  <div class="display-items">
+    <!-- Add display items here -->
+  </div>
+
+  <!-- Skip Button -->
+  <button (click)="onSkipButtonClick()">Skip</button>
+
+  <!-- Comments Section -->
+  <div class="comments-section">
+    <!-- Add comments section elements here -->
+  </div>
+
+  <!-- Policy Status -->
+  <div class="policy-status">
+    <!-- Add policy status elements here -->
+  </div>
+
+  <!-- QC Process Status -->
+  <div class="qc-process-status">
+    <!-- Add QC process status elements here -->
+  </div>
+
+  <!-- Exit Button -->
+  <button (click)="handleExitButtonClick()">Exit</button>
+</div>

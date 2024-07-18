@@ -1,0 +1,76 @@
+/* src/app/modules/insurance/components/rider-details/rider-details.component.css */
+
+/* General styles for the rider details component */
+.rider-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rider-details-form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rider-details-form .form-group {
+  margin-bottom: 15px;
+}
+
+.rider-details-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.rider-details-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.rider-details-form input:required {
+  border-color: #ff0000;
+}
+
+.rider-details-form .numeric-input {
+  text-align: right;
+}
+
+.rider-details-form .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.rider-details-form .form-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.rider-details-form .form-actions button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.rider-details-form .form-actions button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+}

@@ -1,0 +1,56 @@
+<div class="nominee-information-container">
+  <form [formGroup]="nomineeForm" (ngSubmit)="onSubmit()">
+    <!-- Hidden MIS User Field -->
+    <input type="hidden" formControlName="misUser">
+
+    <!-- Scan Date Field -->
+    <div class="form-group">
+      <label for="scanDate">Scan Date</label>
+      <input type="date" id="scanDate" formControlName="scanDate" class="form-control" required>
+    </div>
+
+    <!-- Flag Field -->
+    <div class="form-group">
+      <label for="flag">Flag</label>
+      <input type="number" id="flag" formControlName="flag" class="form-control" required>
+    </div>
+
+    <!-- Insert Date Field -->
+    <div class="form-group">
+      <label for="insertDate">Insert Date</label>
+      <input type="date" id="insertDate" formControlName="insertDate" class="form-control" required>
+    </div>
+
+    <!-- Flag1 Field -->
+    <div class="form-group">
+      <label for="flag1">Flag1</label>
+      <input type="text" id="flag1" formControlName="flag1" class="form-control">
+    </div>
+
+    <!-- Description Field (Display-only) -->
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input type="text" id="description" formControlName="description" class="form-control" readonly>
+    </div>
+
+    <!-- OPUS Value Field (Read-only) -->
+    <div class="form-group">
+      <label for="opusValue">OPUS Value</label>
+      <input type="text" id="opusValue" formControlName="opusValue" class="form-control" readonly>
+    </div>
+
+    <!-- CI Nominee Field (Radio Button) -->
+    <div class="form-group">
+      <label for="ciNominee">CI Nominee</label>
+      <div>
+        <input type="radio" id="ciNomineeYes" formControlName="ciNominee" value="Y">
+        <label for="ciNomineeYes">Yes</label>
+        <input type="radio" id="ciNomineeNo" formControlName="ciNominee" value="N" checked>
+        <label for="ciNomineeNo">No</label>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>
